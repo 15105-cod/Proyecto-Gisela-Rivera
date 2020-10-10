@@ -1,0 +1,30 @@
+
+#menu {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+#menu a {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	line-height: 12px;
+	color: #000;
+	background-color: #999;
+	display: block;
+	margin-right: 4px;
+	float: left;
+	text-align: center;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+#menu a:hover {
+	color: #FFF;
+	background-color: #F90;
+}
+#menu .actual {
+	color: #333;
+	background-color: #FFF;
+	border-bottom-width: 4px;
+	border-bottom-style: solid;
+	border-bottom-color: #666;
+}

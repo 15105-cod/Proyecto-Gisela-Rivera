@@ -1,0 +1,61 @@
+CREATE TABLE  `db_proyecto`.`alumno` (
+  `matricula` int(10) unsigned NOT NULL auto_increment,
+  `nombre` varchar(45) character set utf8 collate utf8_bin NOT NULL,
+  `grado` varchar(10) character set utf8 collate utf8_bin NOT NULL,
+  `grupo` varchar(10) character set utf8 collate utf8_bin NOT NULL,
+  PRIMARY KEY  (`matricula`)
+) ENGINE=MyISAM AUTO_INCREMENT=26 DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE `db_proyecto`.`evaluacion` (
+  `mat_alumno` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  `grado` VARCHAR(5) BINARY NOT NULL,
+  `esp` BIGINT UNSIGNED NOT NULL,
+  `mate` BIGINT UNSIGNED NOT NULL,
+  `hist` BIGINT UNSIGNED NOT NULL,
+  `geo` BIGINT UNSIGNED NOT NULL,
+  `arte` BIGINT UNSIGNED NOT NULL,
+  `promedio` BIGINT UNSIGNED NOT NULL,
+  PRIMARY KEY (`mat_alumno`)
+)
+ENGINE = MyISAM;
+
+
+
+INSERT INTO db_proyecto.alumno (matricula, nombre, grado, grupo) VALUES ('11','Ana Garcia','2','A');
+INSERT INTO db_proyecto.alumno (matricula, nombre, grado, grupo) VALUES ('12','Rosa Lopez','2','A');
+INSERT INTO db_proyecto.alumno (matricula, nombre, grado, grupo) VALUES ('13','Patricio Ramos','2','A');
+INSERT INTO db_proyecto.alumno (matricula, nombre, grado, grupo) VALUES ('14','Edith Andrade','2','A');
+INSERT INTO db_proyecto.alumno (matricula, nombre, grado, grupo) VALUES ('15','Mercedez Sanchez','2','A');
+INSERT INTO db_proyecto.alumno (matricula, nombre, grado, grupo) VALUES ('16','Jorge Armenta','2','A');
+INSERT INTO db_proyecto.alumno (matricula, nombre, grado, grupo) VALUES ('17','Esteban Gonzalez','2','A');
+INSERT INTO db_proyecto.alumno (matricula, nombre, grado, grupo) VALUES ('18','Patricia Morales','2','A');
+INSERT INTO db_proyecto.alumno (matricula, nombre, grado, grupo) VALUES ('19','Lorena Espinoza','2','A');
+INSERT INTO db_proyecto.alumno (matricula, nombre, grado, grupo) VALUES ('20','Roman Camacho','2','A');
+INSERT INTO db_proyecto.alumno (matricula, nombre, grado, grupo) VALUES ('21','Maria Ruiz','2','A');
+INSERT INTO db_proyecto.alumno (matricula, nombre, grado, grupo) VALUES ('22','Isabel Navarro','2','A');
+INSERT INTO db_proyecto.alumno (matricula, nombre, grado, grupo) VALUES ('23','Manuel Gomez','2','A');
+INSERT INTO db_proyecto.alumno (matricula, nombre, grado, grupo) VALUES ('24','Jose Jimenez','2','A');
+INSERT INTO db_proyecto.alumno (matricula, nombre, grado, grupo) VALUES ('25','Ana Martinez','2','A');
+
+
+INSERT INTO db_proyecto.evaluacion (mat_alumno, grado, esp, mate, hist, geo, arte, promedio) VALUES ('11','2','7','7','8','7','9','7');
+INSERT INTO db_proyecto.evaluacion (mat_alumno, grado, esp, mate, hist, geo, arte, promedio) VALUES ('12','2','8','7','7','7','8','7');
+INSERT INTO db_proyecto.evaluacion (mat_alumno, grado, esp, mate, hist, geo, arte, promedio) VALUES ('13','2','10','10','10','10','10','10');
+INSERT INTO db_proyecto.evaluacion (mat_alumno, grado, esp, mate, hist, geo, arte, promedio) VALUES ('14','2','9','9','9','9','10','9');
+INSERT INTO db_proyecto.evaluacion (mat_alumno, grado, esp, mate, hist, geo, arte, promedio) VALUES ('15','2','7','7','8','7','9','7');
+INSERT INTO db_proyecto.evaluacion (mat_alumno, grado, esp, mate, hist, geo, arte, promedio) VALUES ('16','2','8','8','8','8','8','8');
+INSERT INTO db_proyecto.evaluacion (mat_alumno, grado, esp, mate, hist, geo, arte, promedio) VALUES ('17','2','10','10','10','10','10','10');
+INSERT INTO db_proyecto.evaluacion (mat_alumno, grado, esp, mate, hist, geo, arte, promedio) VALUES ('18','2','9','9','9','9','10','9');
+INSERT INTO db_proyecto.evaluacion (mat_alumno, grado, esp, mate, hist, geo, arte, promedio) VALUES ('19','2','10','10','10','10','10','10');
+INSERT INTO db_proyecto.evaluacion (mat_alumno, grado, esp, mate, hist, geo, arte, promedio) VALUES ('20','2','7','7','8','7','9','7');
+INSERT INTO db_proyecto.evaluacion (mat_alumno, grado, esp, mate, hist, geo, arte, promedio) VALUES ('21','2','9','9','9','9','10','9');
+INSERT INTO db_proyecto.evaluacion (mat_alumno, grado, esp, mate, hist, geo, arte, promedio) VALUES ('22','2','10','10','10','10','10','10');
+INSERT INTO db_proyecto.evaluacion (mat_alumno, grado, esp, mate, hist, geo, arte, promedio) VALUES ('23','2','9','9','9','9','10','9');
+INSERT INTO db_proyecto.evaluacion (mat_alumno, grado, esp, mate, hist, geo, arte, promedio) VALUES ('24','2','9','9','9','9','10','9');
+INSERT INTO db_proyecto.evaluacion (mat_alumno, grado, esp, mate, hist, geo, arte, promedio) VALUES ('25','2','10','10','10','10','10','10');
+
+
+
+
+
